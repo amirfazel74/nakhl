@@ -1,0 +1,100 @@
+{% extends 'base/base.html' %}
+{% load static %}
+{% block contents %}
+    {% load static %}
+
+			<!-- ============================ Hero Banner  Start================================== -->
+    <div class="hero_banner image-cover image_bottom h2_bg">
+				<div class="container">
+					<div class="row align-items-center">
+						<div class="col-lg-6 col-md-6 col-sm-12">
+							<div class="simple-search-wrap text-right">
+								<div class="hero_search-2">
+									<div class="elsio_tag">طرح تخفیف تابستان آموزشی</div>
+									<h1 class="banner_title mb-4 font-2">در بین هزاران ساعت آموزش جستجو کنید...</h1>
+									<p class="font-lg mb-4">مجله در ستون و سطرآنچنان که لازم است و برای شرایط فعلی تکنولوژی مورد نیاز و کاربردهای متنوع با هدف بهبود ابزارهای کاربردی می باشد.</p>
+									 <form action="/products/serach">
+                                    <div class="input-group simple_search">
+
+                                            <i class="fa fa-search ico"></i>
+
+                                            <input type="text" class="form-control" name="q" placeholder="نام دوره آموزش...">
+                                            <div class="input-group-append">
+                                                <button class="btn theme-bg" type="button">جستجو</button>
+                                            </div>
+
+									</div>
+                                         </form>
+								</div>
+							</div>
+						</div>
+						<div class="col-lg-6 col-md-6 col-sm-12">
+							<div class="side_block">
+								<img src="{% static '/img/logo.png' %}" class="img-fluid"  alt="" />
+
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<!-- ============================ Hero Banner End ================================== -->
+
+    <!--  award  -->
+    <section class="p-0">
+				<div class="container">
+					<div class="row justify-content-center">
+						<div class="col-lg-12 col-md-12 col-sm-12">
+							<div class="crp_box ovr_top">
+								<div class="row align-items-center m-0">
+									<div class="col-xl-2 col-lg-3 col-md-2 col-sm-12">
+										<div class="crt_169">
+											<div class="crt_overt style_2"><h4>4.7</h4></div>
+											<div class="crt_stion">
+												<i class="fa fa-star"></i>
+												<i class="fa fa-star"></i>
+												<i class="fa fa-star"></i>
+												<i class="fa fa-star"></i>
+												<i class="fa fa-star"></i>
+											</div>
+											<div class="crt_io90"><h6>3,272 امتیاز</h6></div>
+										</div>
+									</div>
+									<div class="col-xl-10 col-lg-9 col-md-10 col-sm-12">
+										<div class="part_rcp">
+											<ul>
+												<li>
+													<div class="dro_140">
+														<div class="dro_141"><i class="fa fa-layer-group"></i></div>
+														<div class="dro_142"><h6>بهترین آموزش<br>غیرحضوری</h6></div>
+													</div>
+												</li>
+												<li>
+													<div class="dro_140">
+														<div class="dro_141 st-1"><i class="fa fa-business-time"></i></div>
+														<div class="dro_142"><h6>دسترسی<br>مادام العمر</h6></div>
+													</div>
+												</li>
+												<li>
+													<div class="dro_140">
+														<div class="dro_141 st-2"><i class="fa fa-user-shield"></i></div>
+														<div class="dro_142"><h6>بیش از 800<br>شرکت کننده</h6></div>
+													</div>
+												</li>
+												<li>
+													<div class="dro_140">
+														<div class="dro_141 st-3"><i class="fa fa-journal-whills"></i></div>
+														<div class="dro_142"><h6>200+ دوره<br>دردسترس</h6></div>
+													</div>
+												</li>
+											</ul>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+
+
+{% endblock %}

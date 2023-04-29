@@ -1,0 +1,54 @@
+{% extends 'base/base.html' %}
+
+{% block contents %}
+    {% load static %}
+     <div class="clearfix"></div>
+<section>
+				<div class="container">
+                    <div class="row justify-content-center">
+                        <div class="col-xl-7 col-lg-8 col-md-12 col-sm-12">
+                            <div class="crs_log_wrap">
+                                 <div class="container">
+
+
+                                <div class="crs_log__thumb">
+                                    <img src="{% static 'img/banner-2.jpg' %}" class="img-fluid" alt="banner">
+                                </div>
+                                <div class="crs_log__caption">
+                                    <div class="rcs_log_123">
+                                        <div class="rcs_ico"><i class="fas fa-lock"></i></div>
+                                    </div>
+                                    <form action="" method="post">
+                                        {% csrf_token %}
+                                        {{ login_form }}
+                                        <br>
+                                        <input type="submit" value="ورود" class="btn full-width btn-md theme-bg text-white">
+
+                                    </form>
+                                </div>
+{#                                <div class="rcs_log_125">#}
+{#                                    <span>یا ورود از طریق شبکه های اجتماعی</span>#}
+{#                                </div>#}
+{#                                <div class="rcs_log_126">#}
+{#                                    <ul class="social_log_45 row">#}
+{#                                        <li class="col-xl-4 col-lg-4 col-md-4 col-4"><a href="javascript:void(0);" class="sl_btn"><i class="ti-facebook text-info"></i>Facebook</a></li>#}
+{#                                        <li class="col-xl-4 col-lg-4 col-md-4 col-4"><a href="javascript:void(0);" class="sl_btn"><i class="ti-google text-danger"></i>Google</a></li>#}
+{#                                        <li class="col-xl-4 col-lg-4 col-md-4 col-4"><a href="javascript:void(0);" class="sl_btn"><i class="ti-twitter theme-cl"></i>Twitter</a></li>#}
+{#                                    </ul>#}
+{#                                </div>#}
+                            </div>
+									<div class="crs_log__footer d-flex justify-content-between mt-0">
+{#										<div class="fhg_45"><p class="musrt">حساب کاربری ندارید؟ <a href="{% url 'register' %}" class="theme-cl">ثبت نام</a></p></div>#}
+										<div class="fhg_45"><p class="musrt"><a href="forgot.html" class="text-danger">رمز عبور را فراموش کرده اید؟</a></p></div>
+									</div>
+						</div>
+
+					</div>
+
+
+				</div>
+				</div>
+				</div>
+				</div>
+			</section>
+{% endblock %}
